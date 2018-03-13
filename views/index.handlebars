@@ -1,0 +1,31 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Til Rolls
+      </h1>
+      <p class="lead">Buy quality til rolls by subscription</p>
+    <form action="/charge" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_KUxqEdELIxgquT0fVfuzIs2q"
+        data-amount="1500"
+        data-name="till roll 20pk"
+        data-description="Box of till rolls"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-zip-code="true"
+        data-currency="GBP">
+      </script>
+      <script>
+        //hide default button
+        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+      </script>
+      <button type="submit" class="btn btn-outline-dark btn-lg">Purchase for £15</button>
+    </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/rolls.jpg" class="img-fluid mt-5" alt="">
+    </div>
+  </div>
+</section>
